@@ -1,0 +1,14 @@
+services:
+  skillshub:
+    build: .
+    container_name: skillshub
+    ports:
+      - "8501:8501"
+    environment:
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY}
+    volumes:
+      - skillshub_data:/root/skillshub_data
+    restart: unless-stopped
+
+volumes:
+  skillshub_data:

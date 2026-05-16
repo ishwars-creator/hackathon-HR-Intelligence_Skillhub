@@ -1,0 +1,18 @@
+# Environment variables (contains API keys — never commit this)
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local database (runtime data, not part of source)
+skillshub_data/
+
+# Claude Code settings
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
